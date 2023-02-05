@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Duong Bui Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- UIkit -->
+	<link rel="stylesheet" href="uikit-3.15.21/css/uikit.min.css" />
+	<script src="uikit-3.15.21/js/uikit.min.js"></script>
+	<script src="uikit-3.15.21/js/uikit-icons.min.js"></script>
+</head>
+<body style="background-color:pink;">
+    <!-- Navbar-->
+    	<div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
+    		<nav class="uk-navbar-container" uk-navbar >
+    		    <div class="uk-navbar-left uk-margin-small-left">
+    									<div class="uk-inline">
+    										<a href="#Home" uk-scroll="offset: 75;"><button class="uk-button uk-button-default">Home</button></a>
+    									</div>
+    									<div class="uk-inline">
+    										<a href="#Aboutme" uk-scroll="offset: 75;"><button class="uk-button uk-button-default">About me</button></a>
+    									</div>
+    									<div class="uk-inline">
+    										<a href="#Articles" uk-scroll="offset: 75;"><button class="uk-button uk-button-default">My articles</button></a>
+    										<div uk-dropdown>
+    											<ul class="uk-nav uk-dropdown-nav">
+    												<li class="uk-active"><a href="#1">Article 1</a></li>
+                						<li class="uk-active"><a href="#2">Article 2</a></li>
+                						<li class="uk-active"><a href="#3">Article 3</a></li>
+    											</ul>
+    										</div>
+    									</div>
+    									<div class="uk-inline">
+    										<a href="#Contact" uk-scroll="offset: 75;"><button class="uk-button uk-button-default">Contact</button></a>
+    										</div>
+    		    </div>
+    		</nav>
+    	</div>
+  <!--Home-->
+  <div class="uk-section uk-section-default">
+  		<h2 id="Home">Welcome to my blog</h2>
+  <!--About me-->
+  <div class="uk-section uk-section-muted">
+      <h2 id="Aboutme">About me</h2>
+  <!--Articles-->
+  <div class="uk-section uk-section-muted">
+      <h2 id="Articles">My articles</h2>
+  <!--Contact-->
+  <div class="uk-section uk-section-muted">
+      <h2 id="Contact">Contact</h2>
+
+
+  <footer>
+    <p>Copyright © 2022 My Personal Blog</p>
+  </footer>
+</body>
+</html>
